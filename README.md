@@ -1,39 +1,94 @@
-🏥 Insurance Cost Prediction App using Deep Learning
+# 🏥💡 Insurance Cost Prediction App using Deep Learning
+
 A deep learning web application that predicts medical insurance charges based on patient details using a Neural Network built with TensorFlow/Keras.
 
-🚀 Demo
+---
+
+## 🚀 Live Demo
 Enter patient details → Get instant insurance cost prediction
 
-📖 Overview
-This project builds an end-to-end machine learning pipeline that:
+---
 
-Cleans and preprocesses the insurance dataset
-Trains a deep neural network to predict insurance charges
-Saves the trained model and scaler for deployment
-Serves predictions via an interactive web app (Gradio / Streamlit)
+## 📖 Project Overview
 
-📁 Project Structure
+This project is an end-to-end Machine Learning + Deep Learning pipeline that:
+
+- Loads and explores the insurance dataset  
+- Performs data preprocessing and encoding  
+- Scales features using StandardScaler  
+- Trains a Deep Neural Network (DNN) using TensorFlow/Keras  
+- Saves trained model and scaler for deployment  
+- Deploys model using Streamlit / Gradio web app  
+
+---
+
+## 📁 Project Structure
+
 insurance-cost-prediction-app/
 │
-├── insurance.csv            # Dataset
-├── model.py                 # Model training script
-├── deployment.py            # Web app (Gradio/Streamlit)
-├── insurance_model.h5       # Saved Keras model
-├── scaler.pkl               # Saved StandardScaler
-├── requirements.txt         # Dependencies
+├── insurance.csv
+├── model.py
+├── deployment.py
+├── insurance_model.h5
+├── scaler.pkl
+├── requirements.txt
 └── README.md
 
-📊 Dataset
-The dataset used is the Medical Cost Personal Dataset from Kaggle.
+---
 
-🧠 Model Architecture
-Input Layer  →  128 neurons (ReLU)
-             →  64 neurons  (ReLU)
-             →  32 neurons  (ReLU)
-Output Layer →  1 neuron    (Linear)
+## 📊 Dataset Information
 
-Optimizer: Adam
-Loss: Mean Squared Error
-Epochs: 100
-Batch Size: 32
+Dataset: Medical Cost Personal Dataset (Kaggle)
+
+Features:
+- age → Age of the person  
+- sex → Gender  
+- bmi → Body Mass Index  
+- children → Number of dependents  
+- smoker → Smoking status  
+- region → Residential area  
+
+Target:
+- charges → Medical insurance cost  
+
+---
+
+## 🧠 Model Architecture
+
+Input Layer  
+↓  
+Dense (128, ReLU)  
+↓  
+Dense (64, ReLU)  
+↓  
+Dense (32, ReLU)  
+↓  
+Output Layer (1, Linear)
+
+---
+
+## ⚙️ Model Configuration
+
+- Optimizer: Adam  
+- Loss: Mean Squared Error  
+- Epochs: 100  
+- Batch Size: 32  
+
+---
+
+## 🧹 Preprocessing Steps
+
+- One-Hot Encoding for categorical features  
+- Dropping unnecessary columns  
+- Standard scaling using StandardScaler  
+- Train-test split  
+
+## 🛠️ Tech Stack
+
+- Python  
+- Pandas, NumPy  
+- Scikit-learn  
+- TensorFlow / Keras  
+- Streamlit  
+
 
