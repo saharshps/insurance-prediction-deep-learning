@@ -1,4 +1,4 @@
-# 🏥💡 Insurance Cost Prediction App using Deep Learning
+# 🏥💡 Insurance Cost Prediction using Deep Learning
 
 A deep learning web application that predicts medical insurance charges based on patient details using a Neural Network built with TensorFlow/Keras.
 
